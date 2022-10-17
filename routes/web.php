@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view ('Home');
+});
+
+Route::get('/about', function () {
+    return view('about', [
+        "name" => "Rhivan Gabrille Demarrio",
+        "email" => "Rhivandemario54@gmail.com",
+        "image" => "profile.jpeg"
+    ]);
+});
+
+Route::get('/blog', function () {
+    return view('posts');
 });
