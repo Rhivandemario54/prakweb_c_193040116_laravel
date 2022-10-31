@@ -19,14 +19,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view ('Home' ,[
-        "title" => "Home"
+    "title" => "Home",
+    "active" => 'Home'
     ]);
 });
 
 Route::get('/about', function () {
     return view('about', [
         "title" => "about",
-        'active' => 'categories',
+        "active" => 'categories',
         "name" => "Rhivan Gabrille Demarrio",
         "email" => "Rhivandemario54@gmail.com",
         "image" => "profile.jpeg"
@@ -49,18 +50,19 @@ Route::get('/categories', function (){
 });
 
 
-Route::get('/categories/{category:slug}', function(Category $category){
-    return view('category', [
-        'title'    =>  "Post By Author : $category->name",
-        'active' => 'categories',
-        'posts'    => $category->posts->load('category', 'author'),
-        'category' => $category->name
-    ]);
-});
+// Route::get('/categories/{category:slug}', function(Category $category){
+//     return view('category', [
+//         'title'    =>  "Post By Author : $category->name",
+//         'active' => 'categories',
+//         'posts'    => $category->posts->load('category', 'author'),
+//         'category' => $category->name
+//     ]);
+// });
 
-Route::get('/authors/{author:username}', function(User $author){
-    return view('posts', [
-        'title'    => "Post By Author : $author->name",
-        'posts'    => $author->posts->load('category', 'author'),
-    ]);
-});
+// Route::get('/authors/{author:username}', function(User $author){
+//     return view('posts', [
+//         'title'    => "Post By Author : $author->name",
+//         'active'   => 'posts',
+//         'posts'    => $author->posts->load('category', 'author'),
+//     ]);
+// });
