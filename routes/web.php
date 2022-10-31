@@ -26,6 +26,7 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about', [
         "title" => "about",
+        'active' => 'categories',
         "name" => "Rhivan Gabrille Demarrio",
         "email" => "Rhivandemario54@gmail.com",
         "image" => "profile.jpeg"
@@ -42,6 +43,7 @@ Route::get('posts/{post:slug}', [PostController::class, 'show']);
 Route::get('/categories', function (){
     return view('categories', [
     'title'    => 'Post Categories',
+    'active' => 'categories',
     'categories' => Category::all()
     ]);
 });
@@ -50,7 +52,9 @@ Route::get('/categories', function (){
 Route::get('/categories/{category:slug}', function(Category $category){
     return view('category', [
         'title'    =>  "Post By Author : $category->name",
+        'active' => 'categories',
         'posts'    => $category->posts->load('category', 'author'),
+        'category' => $category->name
     ]);
 });
 
