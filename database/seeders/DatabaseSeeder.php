@@ -18,80 +18,76 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
 
+
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
 
         // User::create([
-        //     'name' => 'Rhivan Gabrille Demarrio',
-        //     'email' => 'rhivandemario54@gmail.com',
+        //     'name' => 'Indra Wahyudi',
+        //     'email' => 'mindraw595@gmail.com',
         //     'password' => bcrypt('12345')
         // ]);
+
         // User::create([
-        //     'name' => 'Mario',
-        //     'email' => 'Mario@gmail.com',
+        //     'name' => 'Kalam Mahardika',
+        //     'email' => 'kalam.mahardika@gmail.com',
         //     'password' => bcrypt('12345')
         // ]);
 
         User::factory(3)->create();
 
+        // Category::factory(3)->create();
         Category::create([
             'name' => 'Web Programming',
-            'slug' => 'Web-programming'
+            'slug' => 'web-programming'
         ]);
-
         Category::create([
             'name' => 'Web Design',
-            'slug' => 'Web-Design'
+            'slug' => 'web-design'
         ]);
-
         Category::create([
-            'name' => 'personal',
+            'name' => 'Personal',
             'slug' => 'personal'
         ]);
 
         Post::factory(20)->create();
 
         // Post::create([
-        //     'title' => 'Judul-Pertama',
-        //     'slug' => 'judul-Pertama',
-        //     'excerpt' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-        //     'body' => '
-        //     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis dolorum illo suscipit, odio, veritatis officiis ducimus id molestiae autem, voluptatibus aliquam ipsa libero aperiam dolores adipisci voluptatum quam? Officia, quae. Porro cupiditate neque quam exercitationem beatae iusto, omnis assumenda non quas optio delectus temporibus sequi nobis nulla accusantium minima mollitia. Eveniet, dolore incidunt? Sint dolor placeat rerum dolore qui! Repellat explicabo eos, repudiandae iste tenetur quod, voluptate, doloribus commodi consequatur similique libero blanditiis mollitia temporibus officia! Illum perspiciatis laudantium saepe reiciendis, natus ipsa ex inventore dolor ut ducimus distinctio corporis dicta tempore itaque nam velit, totam excepturi accusantium veritatis sint.',
+        //     'tittle' => 'Judul Pertama',
         //     'category_id' => 1,
-        //     'user_id' => 1
+        //     'user_id' => 1,
+        //     'slug' => 'judul-pertama',
+        //     'excerpt' => 'Lorem Ipsum Keempat',
+        //     'body' => '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A adipisci accusantium magnam temporibus omnis repudiandae soluta unde sed ipsum et officia reprehenderit quae, nihil pariatur quos reiciendis rem dolorum quibusdam dolorem, hic fuga, amet nulla dicta. Explicabo voluptas odit sequi libero voluptatem unde quae, qui cumque, dolores sapiente saepe maiores iusto, expedita ullam officia nulla. Omnis quibusdam expedita,</p>rem tempore, ut sint similique possimus atque et, enim laborum animi. Dolore quae vel sit assumenda, est eaque eius animi temporibus asperiores? Voluptatem, earum inventore? Saepe corporis laboriosam delectus fuga earum consequatur rem. Harum quidem maiores perspiciatis laboriosam iste dolorum culpa animi architecto labore eligendi, consectetur officiis hic recusandae facilis necessitatibus neque sed. Veritatis aliquam nostrum rerum excepturi officia? Facere labore unde nemo laborum, deserunt id officiis architecto? Rerum alias porro dignissimos neque? Sequi, vero sunt. Asperiores veritatis eos quaerat qui magni quia sapiente esse maiores. Reiciendis aliquid ad quisquam debitis itaque a sint nostrum molestiae impedit nam facilis, adipisci deleniti nemo iusto consequatur recusandae doloribus dolorum illum eos, officiis ipsa dolore unde. <p></p><p>Nam voluptas quibusdam labore asperiores, similique incidunt repellat et deserunt repellendus autem dolor eligendi rerum reprehenderit aut ea quasi doloremque provident consequuntur, debitis alias distinctio sint expedita sunt. Quod iste aperiam reprehenderit optio, ducimus reiciendis doloribus mollitia tempora ab, incidunt debitis dolorum quas molestias omnis explicabo veniam consequuntur fuga. Quod tempore reiciendis debitis dolores! Iste quasi vero culpa beatae maxime, laborum quam a dolorum expedita dignissimos consequuntur. Ea, enim! Laboriosam quae aspernatur non provident quaerat molestiae ea ipsam ad!</p>'
         // ]);
-        
-        // Post::create([
-        //     'title' => 'Judul Ke Dua',
-        //     'slug' => 'judul-Ke Dua',
-        //     'excerpt' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-        //     'body' => '
-        //     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis dolorum illo suscipit, odio, veritatis officiis ducimus id molestiae autem, voluptatibus aliquam ipsa libero aperiam dolores adipisci voluptatum quam? Officia, quae. Porro cupiditate neque quam exercitationem beatae iusto, omnis assumenda non quas optio delectus temporibus sequi nobis nulla accusantium minima mollitia. Eveniet, dolore incidunt? Sint dolor placeat rerum dolore qui! Repellat explicabo eos, repudiandae iste tenetur quod, voluptate, doloribus commodi consequatur similique libero blanditiis mollitia temporibus officia! Illum perspiciatis laudantium saepe reiciendis, natus ipsa ex inventore dolor ut ducimus distinctio corporis dicta tempore itaque nam velit, totam excepturi accusantium veritatis sint.',
-        //     'category_id' => 1,
-        //     'user_id' => 1
-        // ]);
-        
-        // Post::create([
-        //     'title' => 'Judul-Ke tiga',
-        //     'slug' => 'judul-Ke tiga',
-        //     'excerpt' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-        //     'body' => '
-        //     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis dolorum illo suscipit, odio, veritatis officiis ducimus id molestiae autem, voluptatibus aliquam ipsa libero aperiam dolores adipisci voluptatum quam? Officia, quae. Porro cupiditate neque quam exercitationem beatae iusto, omnis assumenda non quas optio delectus temporibus sequi nobis nulla accusantium minima mollitia. Eveniet, dolore incidunt? Sint dolor placeat rerum dolore qui! Repellat explicabo eos, repudiandae iste tenetur quod, voluptate, doloribus commodi consequatur similique libero blanditiis mollitia temporibus officia! Illum perspiciatis laudantium saepe reiciendis, natus ipsa ex inventore dolor ut ducimus distinctio corporis dicta tempore itaque nam velit, totam excepturi accusantium veritatis sint.',
-        //     'category_id' => 2,
-        //     'user_id' => 1
-        // ]);
-        // Post::create([
-        //     'title' => 'Judul-Ke empat',
-        //     'slug' => 'judul-Ke empat',
-        //     'excerpt' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-        //     'body' => '
-        //     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis dolorum illo suscipit, odio, veritatis officiis ducimus id molestiae autem, voluptatibus aliquam ipsa libero aperiam dolores adipisci voluptatum quam? Officia, quae. Porro cupiditate neque quam exercitationem beatae iusto, omnis assumenda non quas optio delectus temporibus sequi nobis nulla accusantium minima mollitia. Eveniet, dolore incidunt? Sint dolor placeat rerum dolore qui! Repellat explicabo eos, repudiandae iste tenetur quod, voluptate, doloribus commodi consequatur similique libero blanditiis mollitia temporibus officia! Illum perspiciatis laudantium saepe reiciendis, natus ipsa ex inventore dolor ut ducimus distinctio corporis dicta tempore itaque nam velit, totam excepturi accusantium veritatis sint.',
-        //     'category_id' => 2,
-        //     'user_id' => 2
-        // ]);
-    
 
+        // Post::create([
+        //     'tittle' => 'Judul Ke Dua',
+        //     'category_id' => 1,
+        //     'user_id' => 1,
+        //     'slug' => 'judul-ke-dua',
+        //     'excerpt' => 'Lorem Ipsum Kedua',
+        //     'body' => '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A adipisci accusantium magnam temporibus omnis repudiandae soluta unde sed ipsum et officia reprehenderit quae, nihil pariatur quos reiciendis rem dolorum quibusdam dolorem, hic fuga, amet nulla dicta. Explicabo voluptas odit sequi libero voluptatem unde quae, qui cumque, dolores sapiente saepe maiores iusto, expedita ullam officia nulla. Omnis quibusdam expedita,</p>rem tempore, ut sint similique possimus atque et, enim laborum animi. Dolore quae vel sit assumenda, est eaque eius animi temporibus asperiores? Voluptatem, earum inventore? Saepe corporis laboriosam delectus fuga earum consequatur rem. Harum quidem maiores perspiciatis laboriosam iste dolorum culpa animi architecto labore eligendi, consectetur officiis hic recusandae facilis necessitatibus neque sed. Veritatis aliquam nostrum rerum excepturi officia? Facere labore unde nemo laborum, deserunt id officiis architecto? Rerum alias porro dignissimos neque? Sequi, vero sunt. Asperiores veritatis eos quaerat qui magni quia sapiente esse maiores. Reiciendis aliquid ad quisquam debitis itaque a sint nostrum molestiae impedit nam facilis, adipisci deleniti nemo iusto consequatur recusandae doloribus dolorum illum eos, officiis ipsa dolore unde. <p></p><p>Nam voluptas quibusdam labore asperiores, similique incidunt repellat et deserunt repellendus autem dolor eligendi rerum reprehenderit aut ea quasi doloremque provident consequuntur, debitis alias distinctio sint expedita sunt. Quod iste aperiam reprehenderit optio, ducimus reiciendis doloribus mollitia tempora ab, incidunt debitis dolorum quas molestias omnis explicabo veniam consequuntur fuga. Quod tempore reiciendis debitis dolores! Iste quasi vero culpa beatae maxime, laborum quam a dolorum expedita dignissimos consequuntur. Ea, enim! Laboriosam quae aspernatur non provident quaerat molestiae ea ipsam ad!</p>'
+        // ]);
+
+        // Post::create([
+        //     'tittle' => 'Judul Ke Tiga',
+        //     'category_id' => 2,
+        //     'user_id' => 1,
+        //     'slug' => 'judul-ke-tiga',
+        //     'excerpt' => 'Lorem Ipsum Ketiga',
+        //     'body' => '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A adipisci accusantium magnam temporibus omnis repudiandae soluta unde sed ipsum et officia reprehenderit quae, nihil pariatur quos reiciendis rem dolorum quibusdam dolorem, hic fuga, amet nulla dicta. Explicabo voluptas odit sequi libero voluptatem unde quae, qui cumque, dolores sapiente saepe maiores iusto, expedita ullam officia nulla. Omnis quibusdam expedita,</p>rem tempore, ut sint similique possimus atque et, enim laborum animi. Dolore quae vel sit assumenda, est eaque eius animi temporibus asperiores? Voluptatem, earum inventore? Saepe corporis laboriosam delectus fuga earum consequatur rem. Harum quidem maiores perspiciatis laboriosam iste dolorum culpa animi architecto labore eligendi, consectetur officiis hic recusandae facilis necessitatibus neque sed. Veritatis aliquam nostrum rerum excepturi officia? Facere labore unde nemo laborum, deserunt id officiis architecto? Rerum alias porro dignissimos neque? Sequi, vero sunt. Asperiores veritatis eos quaerat qui magni quia sapiente esse maiores. Reiciendis aliquid ad quisquam debitis itaque a sint nostrum molestiae impedit nam facilis, adipisci deleniti nemo iusto consequatur recusandae doloribus dolorum illum eos, officiis ipsa dolore unde. <p></p><p>Nam voluptas quibusdam labore asperiores, similique incidunt repellat et deserunt repellendus autem dolor eligendi rerum reprehenderit aut ea quasi doloremque provident consequuntur, debitis alias distinctio sint expedita sunt. Quod iste aperiam reprehenderit optio, ducimus reiciendis doloribus mollitia tempora ab, incidunt debitis dolorum quas molestias omnis explicabo veniam consequuntur fuga. Quod tempore reiciendis debitis dolores! Iste quasi vero culpa beatae maxime, laborum quam a dolorum expedita dignissimos consequuntur. Ea, enim! Laboriosam quae aspernatur non provident quaerat molestiae ea ipsam ad!</p>'
+        // ]);
+
+        // Post::create([
+        //     'tittle' => 'Judul Keempat',
+        //     'category_id' => 2,
+        //     'user_id' => 2,
+        //     'slug' => 'judul-ke-empat',
+        //     'excerpt' => 'Lorem Ipsum Keempat',
+        //     'body' => '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A adipisci accusantium magnam temporibus omnis repudiandae soluta unde sed ipsum et officia reprehenderit quae, nihil pariatur quos reiciendis rem dolorum quibusdam dolorem, hic fuga, amet nulla dicta. Explicabo voluptas odit sequi libero voluptatem unde quae, qui cumque, dolores sapiente saepe maiores iusto, expedita ullam officia nulla. Omnis quibusdam expedita,</p>rem tempore, ut sint similique possimus atque et, enim laborum animi. Dolore quae vel sit assumenda, est eaque eius animi temporibus asperiores? Voluptatem, earum inventore? Saepe corporis laboriosam delectus fuga earum consequatur rem. Harum quidem maiores perspiciatis laboriosam iste dolorum culpa animi architecto labore eligendi, consectetur officiis hic recusandae facilis necessitatibus neque sed. Veritatis aliquam nostrum rerum excepturi officia? Facere labore unde nemo laborum, deserunt id officiis architecto? Rerum alias porro dignissimos neque? Sequi, vero sunt. Asperiores veritatis eos quaerat qui magni quia sapiente esse maiores. Reiciendis aliquid ad quisquam debitis itaque a sint nostrum molestiae impedit nam facilis, adipisci deleniti nemo iusto consequatur recusandae doloribus dolorum illum eos, officiis ipsa dolore unde. <p></p><p>Nam voluptas quibusdam labore asperiores, similique incidunt repellat et deserunt repellendus autem dolor eligendi rerum reprehenderit aut ea quasi doloremque provident consequuntur, debitis alias distinctio sint expedita sunt. Quod iste aperiam reprehenderit optio, ducimus reiciendis doloribus mollitia tempora ab, incidunt debitis dolorum quas molestias omnis explicabo veniam consequuntur fuga. Quod tempore reiciendis debitis dolores! Iste quasi vero culpa beatae maxime, laborum quam a dolorum expedita dignissimos consequuntur. Ea, enim! Laboriosam quae aspernatur non provident quaerat molestiae ea ipsam ad!</p>'
+        // ]);
     }
 }

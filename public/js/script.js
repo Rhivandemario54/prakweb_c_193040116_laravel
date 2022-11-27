@@ -1,1 +1,1 @@
-alert('HELLO WPU!');
+alert('Helo WPU');
